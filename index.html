@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>glass website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      
+    }
+    
+    /* Style the header */
+    .header {
+      padding: .5px;
+      
+      background: #1c1c1c;
+      color: white;
+    }
+    
+    /* Increase the font size of the h1 element */
+    .header p {
+      font-size: 20px;
+
+      text-align: left;
+      
+    }
+    #navbar {
+  overflow: hidden;
+  background-color:white;
+  padding: 50px 5px;
+  
+  transition: 0.4s;
+  position: relative;
+  width: 100%;
+  
+  
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 20px;
+  
+  
+  
+  
+}
+
+
+
+#navbar a:hover {
+  background-color:white;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: rgb(159, 101, 13);
+  color: rgb(245, 244, 233);
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 50px) {
+  #navbar {
+    padding: 10px ;
+  }
+  #navbar a {
+    float: none;
+    
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+    
+  }
+}
+input[type="search"] {
+  border: none;
+  background: rgb(176, 171, 162);
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: rgb(33, 33, 31);
+  
+  border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+  color: #382c01;
+}
+
+.container { 
+  position: relative;
+  font-family: Arial;
+}
+
+.text-block {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  
+  color: rgb(19, 18, 18);
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 25px;
+}
+text-block.p{
+  font: size 40px; ;
+}
+.text-blocks {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  
+  color: rgb(19, 18, 18);
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 25px;
+}
+.text-blockss {
+  position: absolute;
+  border-bottom: 50px;
+  right: 50px;
+  color: rgb(19, 18, 18);
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 25px;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  
+  text-decoration: none;
+  
+  font-size: 16px;
+  margin: 20px 4px;
+  cursor: pointer;
+}
+
+
+.button1 {background-color: #121212;}
+.button2 {background-color: #121212;}
+.button3 {background-color: #121212;}
+.button4 {background-color: #121212;}
+.button5 {background-color: #121212;}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 30%;
+  padding: 3px;
+  width: 30%;
+}
+
+.column1 .content {
+  position: absolute;
+  bottom: 33%;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 20%;
+  padding: 10px;
+  height: 10%;
+}
+.container.h2{
+  text-align: center;
+  font-size: xx-large;
+}
+.container.h3{
+  font-weight: 100;
+}
+.footer {
+  padding: 30px;
+  text-align: center;
+  background: #cfac6c;
+}
+.footer.a{
+  text-align: center;
+}
+.fa {
+  padding: 5px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+    </style>
+    </head>
+    <body>
+    
+    <div class="header">
+      <p>   FREE SHIPPING FOR ALL ORDERS OF AED 150</p>
+      <p> LOCATION</p>
+     
+    </div>
+    <div id="navbar">
+      <img src="IMAGES\EYENATION.png" alt="logo"  width="180" height="100"> 
+      <div id="navbar-right">
+        <a href="#concepts">CONCEPTS </a>
+        <a href="#brands">BRANDS</a>
+        <a href="#category">CATEGORY</a>
+        <a href="#catalog">CATALOG</a>
+        <a href="#Accessories">ACCESSORIES</a>
+        <a class="active" href="#login">LOGIN</a>
+        <a href="#register">REGISTER</a>
+        <i class="material-icons">person</i>
+        <i class="material-icons">search</i>
+        <i class="material-icons">favorite_border</i>
+        <i class="material-icons">event_note</i>
+          
+        
+      
+    </div>
+    <div class="container">
+      <img src="IMAGES\women.jpg" alt="glasswomen" style="width:100%;" height="800">
+      <div class="text-block">
+        <p>Unbelievable low prices</p>
+        <h1>GLASSES FOR<br> WOMEN & MEN </h1>
+        <button class="button button2">Buy Now </button>
+      </div>
+      <div class="container">
+        <img src="IMAGES\EYEWEAR1.jpeg" alt="glasswomen" style="width:100%;" height="700">
+        <div class="text-blocks">
+          <p>WHAT WE'RE ABOUT</p>
+          <h1>SEE THE WORLD<br>
+            DIFFRENTLY</h1>
+       
+        <button class="button button1">Shop Now </button>   
+        </div>
+        <div class="column1">
+            <img src="IMAGES\girls.jpg" alt="girls" style="height: 20%;" >
+            <div class="content">
+              <h1>10 YEARS VISION</h1>
+              <p>Reminisce with us</p>
+            </div>
+          </div>
+          
+         
+    <h2>Products</h2>
+    <div class="row">
+      <div class="column">
+        <img src="IMAGES\s-l1600.jpg" alt="Snow" style="width:100%">
+        <button class="button button3">Buy Now </button>
+      </div>
+      <div class="column">
+        <img src="IMAGES\Frames.jpg" alt="Forest" style="width:100%">
+        <button class="button button4">Buy Now </button>
+      </div>
+      <div class="column">
+        <img src="IMAGES\EYEWEAR1.jpeg" alt="Mountains" style="width:100%">
+        <button class="button button5">Buy Now </button>
+      </div>
+    </div>
+
+    </div>
+   
+<div class="footer">
+  <p>@ 2023 Eye Nation Group LLC. All Rights Reserved</p>
+   <a href="#" class="fa fa-facebook"></a>
+   <a href="#" class="fa fa-twitter"></a>
+</div>  
+</body>
+</html>
